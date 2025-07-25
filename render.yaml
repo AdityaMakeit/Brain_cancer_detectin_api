@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: your-app-name
+    env: docker
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: "your-start-command"  # Replace with python app.py or gunicorn app:app
